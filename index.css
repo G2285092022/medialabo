@@ -1,0 +1,18 @@
+h1{
+    border-bottom-style: groove;
+    background-color: pink;
+}
+
+
+a:link{
+    color: green;
+}
+a:visited{
+    color: skyblue;
+}
+h2{
+    background-color: red;
+}
+h3{
+    border-bottom-style: solid;
+}

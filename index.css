@@ -10,6 +10,9 @@ a:link{
 a:visited{
     color: skyblue;
 }
+a:hover{
+    color: red:
+}
 h2{
     background-color: red;
 }

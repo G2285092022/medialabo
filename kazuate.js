@@ -13,13 +13,14 @@ b1.addEventListener('click', hantei);
 
 
 function hantei() {
+  kaisu=kaisu+1;
   kaisu.textContent = console.log(kaisu);
   let i = document.querySelector('input[name="suuzi"]');
   let yoso = i.value;
   let kaisu1 = document.querySelector('span#kaisu');
   let yoso1 = document.querySelector('span#answer');
   kaisu1.textContent = kaisu;
-  yoso.textContent = yoso;
+  yoso.textContent = i.value;
   console.log(kaisu +"回目の予想:"+yoso);
   let kekka = document.querySelector('p#result');
 
@@ -29,7 +30,7 @@ function hantei() {
     console.log("答えは"+kotae+"でした。すでにゲームは終わってます");
   }  else {
     kekka.textContent="正解です。おめでとう!";
-    console.log("正解です。おめでとう!")
+    console.log("正解です。おめでとう!");
   }  
 
 } else {
@@ -41,11 +42,11 @@ function hantei() {
         console.log("答えは"+kotae+"でした。すでにゲームは終わってます");
     } else if (kotae>yoso){
         kekka.textContent("まちがい、答えはもっと大きいですよ");
-        kekka.textconsole.log("まちがい、答えはもっと大きいですよ");
+        console.log("まちがい、答えはもっと大きいですよ");
       } else{
-        kekka.textconsole.log("まちがい、答えはもっと小さいですよ");
+        kekka.textContent="まちがい、答えはもっと小さいですよ";
+        console.log("まちがい、答えはもっと小さいですよ");
         kaisu.textConsole += 1;
       }
-}
-kaisu++;
+  }
 }

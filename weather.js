@@ -46,6 +46,32 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+
+let b1 = document.querySelector('#print');
+b1.addEventListener('click',yoho);
+
+function yoho(){
+
+let kensaku = document.querySelector('li#kensaku')
+kensaku.textContent=("世界の天気(検索結果1件");
+let ido= document.querySelector('li#ido')
+ido.textContent=("緯度:116.3972");
+let keido= document.querySelector('li#keido')
+keido.textContent=("経度:39.5907");
+let tenki= document.querySelector('li#tenki')
+tenki.textContent=("天気:曇りがち");
+let saitei= document.querySelector('li#saitei')
+saitei.textContent=("最低気温:9.94");
+let saikou= document.querySelector('li#saikou')
+saikou.textContent="最高気温:9.94";
+let ondo= document.querySelector('li#ondo')
+ondo.textContent=("湿度:14");
+let huusoku= document.querySelector('li#huusoku')
+huusoku.textContent=("風速:2.65");
+let huukou= document.querySelector('li#huukou')
+huukou.textContent=("風向:197");
+let tosimei= document.querySelector('li#tosimei')
+tosimei.textContent=("都市名:北京");
 let y =data;
 console.log(y.coord.lon);
 console.log(y.coord.lat);
@@ -58,4 +84,4 @@ console.log(y.main.humidity);
 console.log(y.wind.speed);
 console.log(y.wind.deg);
 console.log(y.name);
-
+}

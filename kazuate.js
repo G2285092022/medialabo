@@ -16,11 +16,11 @@ function hantei() {
   kaisu=kaisu+1;
   kaisu.textContent = console.log(kaisu);
   let i = document.querySelector('input[name="suuzi"]');
-  let yoso = i.value;
+  let yoso = parseInt(i.value);
   let kaisu1 = document.querySelector('span#kaisu');
   let yoso1 = document.querySelector('span#answer');
   kaisu1.textContent = kaisu;
-  yoso.textContent = i.value;
+  yoso1.textContent = parseInt(i.value);
   console.log(kaisu +"回目の予想:"+yoso);
   let kekka = document.querySelector('p#result');
 

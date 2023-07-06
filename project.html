@@ -8,18 +8,37 @@
         <script src="weather.js" defer></script>
     </head>
     <body>
-            <h4>世界の天気(検索結果1件)</h4>
-            <ul>
-            <li>緯度:116.3972</li>
-            <li>経度:39.9075</li>
-            <li>天気:曇りがち</li>
-            <li>最低気温:9.94</li>
-            <li>最高気温:9.94</li>
-            <li>湿度:14</li>
-            <li>風速:2.65</li>
-            <li>風向:197</li>
-            <li>都市名:北京</li>
-            </ul>
-            <div id="result"></div>>
+
+        <label for="tenki">国を検索: </label>
+       <select name="tenki" id="tenki">
+        <option value="">
+        国を選んでください
+        </option>
+        <option value="pekin">
+        北京
+        </option>
+       </select>
+        <button id="print">
+            表示
+        </button>
+        
+        <ul class="target">
+            <li id="kensaku"></li>
+            <li id="ido"></li>
+            <li id="keido"></li>
+            <li id="tenki"></li>
+            <li id="saitei"></li>
+            <li id="saikou"></li>
+            <li id="ondo"></li>
+            <li id="huusoku"></li>
+            <li id="huukou"></li>
+            <li id="tosimei"></li>
+
+        </ul>
+
+
+
+            <div id="result">
+            </div>>
         </body>
         </html>

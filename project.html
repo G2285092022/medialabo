@@ -6,39 +6,43 @@
         <title>○世界の天気</title>
         <link rel="stylesheet"href="project.css">
         <script src="weather.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     </head>
     <body>
 
         <label for="tenki">国を検索: </label>
        <select name="tenki" id="tenki">
-        <option value="">
-        国を選んでください
-        </option>
-        <option value="pekin">
-        北京
-        </option>
+        <option value="">国を選んでください</option>
+        <option value="360630">カイロ</option>
+        <option value="524901">モスクワ</option>
+        <option value="993800">ヨハネスブルク</option>
+        <option value="1816670">北京</option>
+        <option value="1850147">東京</option>
+        <option value="1880252">シンガポール</option>
+        <option value="2147714">シドニー</option>
+        <option value="2643743">ロンドン</option>
+        <option value="2968815">パリ</option>
+        <option value="3451189">リオデジャネイロ</option>
+        <option value="5128581">ニューヨーク</option>
+        <option value="5368361">ロサンゼルス</option>
        </select>
-        <button id="print">
-            表示
-        </button>
+        <button id="print">表示</button>
         
         <ul class="target">
-            <li id="kensaku"></li>
-            <li id="ido"></li>
-            <li id="keido"></li>
-            <li id="tenki"></li>
-            <li id="saitei"></li>
-            <li id="saikou"></li>
-            <li id="ondo"></li>
-            <li id="huusoku"></li>
-            <li id="huukou"></li>
-            <li id="tosimei"></li>
-
+            <li id="ido">緯度</li>
+            <li id="keido">経度</li>
+            <li id="tenki">天気</li>
+            <li id="saitei">最低気温</li>
+            <li id="saikou">最高気温</li>
+            <li id="ondo">温度</li>
+            <li id="huusoku">風速</li>
+            <li id="huukou">風向</li>
+            <li id="tosimei">都市名</li>
         </ul>
 
 
 
             <div id="result">
-            </div>>
+            </div>
         </body>
         </html>

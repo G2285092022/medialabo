@@ -9,3 +9,16 @@ li {
 	background:linear-gradient(90deg,#ffefaf,white);
 	margin: 5px;
 }
+body{
+
+    background:linear-gradient(90deg,skyblue,white);
+
+}
+
+label{
+    font-family: cursive;
+    color: red;
+    
+    display: block;
+	width: 100%;
+}

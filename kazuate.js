@@ -41,7 +41,7 @@ function hantei() {
         kekka.textContent="答えは"+kotae+"でした。すでにゲームは終わってます";
         console.log("答えは"+kotae+"でした。すでにゲームは終わってます");
     } else if (kotae>yoso){
-        kekka.textContent("まちがい、答えはもっと大きいですよ");
+        kekka.textContent="まちがい、答えはもっと大きいですよ";
         console.log("まちがい、答えはもっと大きいですよ");
       } else{
         kekka.textContent="まちがい、答えはもっと小さいですよ";
